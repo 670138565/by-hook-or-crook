@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+  这是游戏的网页入口文件。
+  不要双击这个文件打开。请先运行 server.ps1，再访问 http://localhost:8000
+-->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 让网页在手机和电脑上都不缩放变形 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盗亦有道</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23222' width='32' height='32'/%3E%3C/svg%3E">
+    <style>
+        /* 去掉浏览器默认的边距，让游戏画面铺满整个窗口 */
+        * { margin: 0; padding: 0; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+        /* 游戏画布居中显示；加载水印在 canvas 底下用 CSS 滚，不跟加载卡顿 */
+        #game-container { position: relative; width: 100vw; height: 100vh; }
+        #game-container canvas { position: relative; z-index: 1; }
+        #load-watermark {
+            display: none;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+            background-color: #14110e;
+        }
+        #load-watermark .wm-layer {
+            position: absolute;
+            left: -40%;
+            top: -40%;
+            width: 180%;
+            height: 180%;
+            background-repeat: repeat;
+            will-change: transform;
+            backface-visibility: hidden;
+            animation: loadWmScroll 11s linear infinite;
+        }
+        @keyframes loadWmScroll {
+            from { transform: translate3d(0, 0, 0); }
+            to { transform: translate3d(-360px, -220px, 0); }
+        }
+        #file-warn {
+            display: none; color: #cdd6f4; font-family: sans-serif;
+            max-width: 560px; margin: 12vh auto; padding: 0 24px; line-height: 1.7;
+        }
+        #file-warn h1 { color: #f9e2af; font-size: 22px; margin-bottom: 14px; }
+        #file-warn code { color: #89b4fa; }
+    </style>
+</head>
+<body>
+    <div id="file-warn">
+        <h1>不要双击打开这个文件</h1>
+        <p>游戏必须通过本地服务打开，否则会大量报错。</p>
+        <p>1. 到文件夹 <code>A:\AI game</code>，双击 <code>server.ps1</code></p>
+        <p>2. 浏览器地址栏输入：<code>http://localhost:8000</code></p>
+        <p>3. 编辑器地址：<code>http://localhost:8000/editor.html</code></p>
+    </div>
+    <!-- 游戏画面会被 Phaser 自动塞进这个 div 里 -->
+    <div id="game-container"></div>
+
+    <script>
+        if (location.protocol === 'file:') {
+            document.getElementById('file-warn').style.display = 'block';
+            document.getElementById('game-container').style.display = 'none';
+        }
+    </script>
+    <!-- 先加载 Phaser 引擎（必须先加载，游戏代码才能用 Phaser 这个对象） -->
+    <script src="libs/phaser.min.js"></script>
+    <!-- 多语言：框架先行，四个语言表随后注册 -->
+    <script src="src/core/i18n.js?v=20260924h"></script>
+    <script src="src/locales/zh.js?v=20260924h"></script>
+    <script src="src/locales/en.js?v=20260924h"></script>
+    <script src="src/locales/es.js?v=20260924h"></script>
+    <script src="src/locales/pt.js?v=20260924h"></script>
+    <!-- 再加载我们的游戏主程序 -->
+    <script src="src/config.js?v=20260923p"></script>
+    <script src="src/config/maps.js"></script>
+    <script src="src/core/EventBus.js"></script>
+    <script src="src/core/AudioSys.js?v=20260924c"></script>
+    <script src="src/core/UiTheme.js?v=20260923a"></script>
+    <script src="src/core/tutorial-config.js?v=20260924e"></script>
+    <script src="src/core/TutSys.js?v=20260924f"></script>
+    <script src="src/core/GameState.js?v=20260923i"></script>
+    <script src="src/core/ItemDB.js?v=20260922o"></script>
+    <script src="src/core/Combat.js?v=20260923b"></script>
+    <script src="src/core/LootDB.js?v=20260919d"></script>
+    <script src="src/core/ShopDB.js?v=20260923a"></script>
+    <script src="src/core/DialogueDB.js?v=20260923f"></script>
+    <script src="src/core/QuestDB.js?v=20260923e"></script>
+    <script src="src/core/WorldManager.js?v=20260927a"></script>
+    <script src="src/core/WorldTileStream.js?v=20260907g"></script>
+    <script src="src/fx/OcclusionFadePipeline.js?v=20260919a"></script>
+    <script src="src/entities/Player.js?v=20260915b"></script>
+    <script src="src/entities/InteractiveObject.js?v=20260918e"></script>
+    <script src="src/scenes/BootScene.js?v=20260923d"></script>
+    <script src="src/scenes/TitleScene.js?v=20260924b"></script>
+    <script src="src/scenes/PreloadScene.js?v=20260923o"></script>
+    <script src="src/scenes/GameScene.js?v=20260924h"></script>
+    <script src="src/scenes/StealScene.js?v=20260924d"></script>
+    <script src="src/scenes/BackpackScene.js?v=20260924g"></script>
+    <script src="src/scenes/ShopScene.js?v=20260922o"></script>
+    <script src="src/scenes/DialogueScene.js?v=20260923a"></script>
+    <script src="src/scenes/BattleScene.js?v=20260923a"></script>
+    <script src="src/main.js?v=20260923h"></script>
+</body>
+</html>

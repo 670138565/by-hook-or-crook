@@ -1,0 +1,113 @@
+{
+  "shops": [
+    {
+      "id": "fence_default",
+      "name": "销赃贩",
+      "buyRate": 0.5,
+      "sellRate": 1,
+      "bargainRange": 0.1,
+      "money": 80,
+      "refreshSeconds": 300,
+      "shelfCols": 6,
+      "shelfRows": 6,
+      "stock": [
+        { "kind": "lockpick", "count": 3 },
+        { "kind": "item", "itemId": "rye_bread", "count": 3 },
+        { "kind": "item", "itemId": "herb_vial", "count": 1 },
+        { "kind": "item", "itemId": "linen_tunic", "count": 1 }
+      ]
+    },
+    {
+      "id": "shop_muller",
+      "name": "老穆勒杂货铺",
+      "buyRate": 0.5,
+      "sellRate": 1,
+      "bargainRange": 0.1,
+      "money": 150,
+      "daily": true,
+      "cashRecover": 0.6,
+      "hours": "day",
+      "lockpickPrice": 10,
+      "shelfCols": 6,
+      "shelfRows": 6,
+      "stock": [
+        { "kind": "item", "itemId": "rye_bread", "count": 3, "price": 5 },
+        { "kind": "item", "itemId": "herb_vial", "count": 2, "price": 25 },
+        { "kind": "item", "itemId": "torch", "count": 1, "price": 25 },
+        { "kind": "item", "itemId": "fake_key", "count": 2, "price": 20 },
+        { "kind": "item", "itemId": "linen_tunic", "count": 1, "price": 30 }
+      ]
+    },
+    {
+      "id": "shop_smith",
+      "name": "铁砧与手铁匠铺",
+      "buyRate": 0.5,
+      "sellRate": 1,
+      "bargainRange": 0.1,
+      "money": 500,
+      "daily": true,
+      "cashRecover": 0.6,
+      "hours": "day",
+      "lockpickPrice": 10,
+      "metalBonus": 0.5,
+      "buyPrefs": [
+        { "itemId": "iron_plate", "bonus": 0.5 }
+      ],
+      "shelfCols": 6,
+      "shelfRows": 6,
+      "stock": [
+        { "kind": "item", "itemId": "heirloom_dagger", "count": 1, "price": 150 },
+        { "kind": "item", "itemId": "billhook", "count": 1, "price": 90 },
+        { "kind": "item", "itemId": "item_1788094852475", "count": 1, "price": 100 },
+        { "kind": "item", "itemId": "item_1788094876427", "count": 1, "price": 110 },
+        { "kind": "item", "itemId": "buckler", "count": 2, "price": 25 },
+        { "kind": "item", "itemId": "thorn_shield", "count": 1, "price": 85 },
+        { "kind": "item", "itemId": "iron_plate", "count": 1, "price": 20 }
+      ]
+    },
+    {
+      "id": "shop_tavern",
+      "name": "大乐乐酒吧",
+      "buyRate": 0.5,
+      "sellRate": 1,
+      "bargainRange": 0.1,
+      "money": 300,
+      "daily": true,
+      "cashRecover": 0.6,
+      "hours": "evening",
+      "buyPrefs": [
+        { "itemId": "oak_keg", "price": 22 },
+        { "itemId": "gold_goblet", "price": 55 }
+      ],
+      "shelfCols": 6,
+      "shelfRows": 6,
+      "stock": [
+        { "kind": "item", "itemId": "village_beer", "count": 3, "price": 8 },
+        { "kind": "item", "itemId": "aged_wine", "count": 1, "price": 25 },
+        { "kind": "item", "itemId": "rye_bread", "count": 2, "price": 5 },
+        { "kind": "item", "itemId": "antidote", "count": 1, "price": 35 }
+      ]
+    },
+    {
+      "id": "shop_gray",
+      "name": "灰贩子黑市",
+      "buyRate": 1,
+      "sellRate": 1,
+      "bargainRange": 0.1,
+      "money": 900,
+      "daily": true,
+      "cashRecover": 0.6,
+      "hours": "late",
+      "safeFence": true,
+      "shelfCols": 6,
+      "shelfRows": 6,
+      "stock": [
+        { "kind": "item", "itemId": "poison", "count": 1, "price": 70 },
+        { "kind": "item", "itemId": "item_1788094802576", "count": 1, "price": 105 },
+        { "kind": "item", "itemId": "item_1788094833677", "count": 1, "price": 95 },
+        { "kind": "item", "itemId": "item_1788094989544", "count": 1, "price": 220 },
+        { "kind": "item", "itemId": "master_key", "count": 1, "price": 280 }
+      ]
+    }
+  ]
+}

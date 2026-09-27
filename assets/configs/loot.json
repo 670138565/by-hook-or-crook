@@ -1,0 +1,141 @@
+{
+  "tables": [
+    {
+      "id": "chest_wood",
+      "name": "木箱（默认）",
+      "lockLevel": 1,
+      "isDefault": true,
+      "rollsMin": 2,
+      "rollsMax": 4,
+      "guaranteed": [],
+      "qualityRates": [
+        { "quality": 1, "weight": 72 },
+        { "quality": 2, "weight": 25 },
+        { "quality": 3, "weight": 3 },
+        { "quality": 4, "weight": 0 },
+        { "quality": 5, "weight": 0 }
+      ],
+      "pool": []
+    },
+    {
+      "id": "chest_iron",
+      "name": "铁箱（默认）",
+      "lockLevel": 2,
+      "isDefault": true,
+      "rollsMin": 3,
+      "rollsMax": 5,
+      "guaranteed": [],
+      "qualityRates": [
+        { "quality": 1, "weight": 25 },
+        { "quality": 2, "weight": 52 },
+        { "quality": 3, "weight": 20 },
+        { "quality": 4, "weight": 3 },
+        { "quality": 5, "weight": 0 }
+      ],
+      "pool": []
+    },
+    {
+      "id": "chest_gold",
+      "name": "金箱（默认）",
+      "lockLevel": 3,
+      "isDefault": true,
+      "rollsMin": 4,
+      "rollsMax": 6,
+      "guaranteed": [],
+      "qualityRates": [
+        { "quality": 1, "weight": 5 },
+        { "quality": 2, "weight": 20 },
+        { "quality": 3, "weight": 45 },
+        { "quality": 4, "weight": 30 },
+        { "quality": 5, "weight": 0 }
+      ],
+      "pool": []
+    },
+    {
+      "id": "battle_dog",
+      "name": "战斗：狗",
+      "lockLevel": 0,
+      "isDefault": false,
+      "rollsMin": 1,
+      "rollsMax": 1,
+      "guaranteed": [],
+      "pool": [
+        { "kind": "item", "itemId": "rye_bread", "weight": 40, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "rusty_nail", "weight": 30, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "flying_knife", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "lockpick", "weight": 18, "min": 1, "max": 1, "unique": false }
+      ]
+    },
+    {
+      "id": "battle_guard",
+      "name": "战斗：守卫",
+      "lockLevel": 0,
+      "isDefault": false,
+      "rollsMin": 1,
+      "rollsMax": 2,
+      "guaranteed": [],
+      "pool": [
+        { "kind": "item", "itemId": "dagger", "weight": 28, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "linen_tunic", "weight": 18, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "buckler", "weight": 16, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "iron_arrow", "weight": 20, "min": 1, "max": 2, "unique": false },
+        { "kind": "item", "itemId": "rye_bread", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "lockpick", "weight": 6, "min": 1, "max": 1, "unique": false }
+      ]
+    },
+    {
+      "id": "battle_bandit",
+      "name": "战斗：强盗",
+      "lockLevel": 0,
+      "isDefault": false,
+      "rollsMin": 1,
+      "rollsMax": 2,
+      "guaranteed": [],
+      "pool": [
+        { "kind": "item", "itemId": "short_sword", "weight": 22, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "flying_knife", "weight": 18, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "short_bow", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "linen_tunic", "weight": 14, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "oil_bottle", "weight": 16, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "iron_arrow", "weight": 18, "min": 1, "max": 2, "unique": false }
+      ]
+    },
+    {
+      "id": "battle_captain",
+      "name": "战斗：队长",
+      "lockLevel": 0,
+      "isDefault": false,
+      "rollsMin": 2,
+      "rollsMax": 3,
+      "guaranteed": [],
+      "pool": [
+        { "kind": "item", "itemId": "spear", "weight": 18, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "short_sword", "weight": 16, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "thorn_shield", "weight": 14, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "buckler", "weight": 14, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "iron_arrow", "weight": 16, "min": 2, "max": 3, "unique": false },
+        { "kind": "item", "itemId": "healing_potion", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "herb_vial", "weight": 10, "min": 1, "max": 1, "unique": false }
+      ]
+    },
+    {
+      "id": "battle_elite",
+      "name": "战斗：精英守卫",
+      "lockLevel": 0,
+      "isDefault": false,
+      "rollsMin": 2,
+      "rollsMax": 3,
+      "guaranteed": [],
+      "pool": [
+        { "kind": "item", "itemId": "scythe", "weight": 14, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "war_hammer", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "tower_shield", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "thorn_shield", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "short_bow", "weight": 14, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "healing_potion", "weight": 16, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "energy_potion", "weight": 12, "min": 1, "max": 1, "unique": false },
+        { "kind": "item", "itemId": "iron_arrow", "weight": 8, "min": 2, "max": 4, "unique": false }
+      ]
+    }
+  ]
+}

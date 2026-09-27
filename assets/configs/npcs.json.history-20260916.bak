@@ -1,0 +1,1219 @@
+{
+  "henry": {
+    "portrait": "AIT20260915201224ODGXE91N-转换参考图的画风为2D中世纪游戏资产风格手绘插画，纯白背景-1_2.png",
+    "moods": [],
+    "avatarCrop": {
+      "cx": 0.46944444444444444,
+      "cy": 0.09711914062499998,
+      "size": 0.2599999999999999
+    }
+  },
+  "npcs": [
+    {
+      "id": "farmer_hello",
+      "name": "狗剩",
+      "gender": "男",
+      "identity": "村口的农夫",
+      "portrait": "AIT20260915201609RIZILDWM-转换参考图的画风为2D中世纪游戏资产风格手绘插画，纯白背景-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 200
+          },
+          {
+            "id": "n1",
+            "type": "npc",
+            "x": 287,
+            "y": 62,
+            "text": "嘿，你是原住民还是帝国公民？这村里最近不太平。"
+          },
+          {
+            "id": "c1",
+            "type": "choice",
+            "x": 560,
+            "y": 150,
+            "options": [
+              {
+                "id": "o1",
+                "text": "怎么回事？"
+              },
+              {
+                "id": "o2",
+                "text": "我只是路过。"
+              }
+            ]
+          },
+          {
+            "id": "n2",
+            "type": "npc",
+            "x": 860,
+            "y": 80,
+            "text": "夜里总有人摸鸡窝。你要是看见形迹可疑的，离远点。"
+          },
+          {
+            "id": "n3",
+            "type": "npc",
+            "x": 860,
+            "y": 300,
+            "text": "那你走好。别惹麻烦。"
+          },
+          {
+            "id": "n4",
+            "type": "npc",
+            "x": 1160,
+            "y": 80,
+            "text": "嗯。上帝保佑你。"
+          },
+          {
+            "id": "e1",
+            "type": "end",
+            "x": 1160,
+            "y": 300
+          },
+          {
+            "id": "e2",
+            "type": "end",
+            "x": 1460,
+            "y": 80
+          }
+        ],
+        "connections": [
+          {
+            "from": "s",
+            "to": "n1",
+            "port": "out"
+          },
+          {
+            "from": "n1",
+            "to": "c1",
+            "port": "out"
+          },
+          {
+            "from": "c1",
+            "to": "n2",
+            "port": "o1"
+          },
+          {
+            "from": "c1",
+            "to": "n3",
+            "port": "o2"
+          },
+          {
+            "from": "n2",
+            "to": "n4",
+            "port": "out"
+          },
+          {
+            "from": "n3",
+            "to": "e1",
+            "port": "out"
+          },
+          {
+            "from": "n4",
+            "to": "e2",
+            "port": "out"
+          }
+        ]
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.49722222222222223,
+        "cy": 0.1413229571984436,
+        "size": 0.2599999999999999
+      },
+      "_sel": "n1"
+    },
+    {
+      "id": "npc_1789478097633",
+      "name": "乌昂·兆迎",
+      "gender": "男",
+      "identity": "神父",
+      "portrait": "AIT20260915200734EGUBFXTU-转换参考图的画风为2D中世纪奇幻游戏资产风格手绘插画-1_2.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5194444444444444,
+        "cy": 0.1288715953307393,
+        "size": 0.21999999999999992
+      }
+    },
+    {
+      "id": "npc_1789478128855",
+      "name": "迪丽奶",
+      "gender": "女",
+      "identity": "酒吧老板",
+      "portrait": "AIT20260915200933ILCIIK3B-转换参考图的画风为2D中世纪奇幻游戏资产风格手绘插画-1_2.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5083333333333333,
+        "cy": 0.14962386511024645,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478135295",
+      "name": "达帝·张振",
+      "gender": "男",
+      "identity": "小偷",
+      "portrait": "AIT20260915201100JSIEERXN-转换参考图的画风为2D中世纪游戏资产风格手绘插画，纯白背景-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5666666666666667,
+        "cy": 0.145473411154345,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478141390",
+      "name": "侯凯·扬",
+      "gender": "男",
+      "identity": "守卫",
+      "portrait": "AIT20260915201216OA6DKEB6-转换参考图的画风为2D中世纪游戏资产风格手绘插画，纯白背景-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          },
+          {
+            "id": "n1789484715293",
+            "type": "npc",
+            "x": 42.43018034879799,
+            "y": 243.90443738088953,
+            "text": "……"
+          },
+          {
+            "id": "n1789484723100",
+            "type": "npc",
+            "x": 125.65294634503562,
+            "y": 281.7017976177592,
+            "text": "呃……"
+          },
+          {
+            "id": "p1789484735540",
+            "type": "player",
+            "x": 308.27185375411796,
+            "y": 102.47920748424372,
+            "text": "哈喽？"
+          },
+          {
+            "id": "n1789484746883",
+            "type": "npc",
+            "x": 537.5965732932448,
+            "y": 80.3613532120302,
+            "text": "嗯？"
+          },
+          {
+            "id": "p1789484786243",
+            "type": "player",
+            "x": 790.9520285249022,
+            "y": 61.3050976061357,
+            "text": "这个人困得不成样子，连站都站不稳了"
+          },
+          {
+            "id": "p1789484810997",
+            "type": "player",
+            "x": 1034.4520918840242,
+            "y": 68.61708854926803,
+            "text": "（大声）嘿！—— 醒醒！——"
+          }
+        ],
+        "connections": [
+          {
+            "from": "s",
+            "to": "n1789484715293",
+            "port": "out"
+          },
+          {
+            "from": "n1789484715293",
+            "to": "n1789484723100",
+            "port": "out"
+          },
+          {
+            "from": "n1789484723100",
+            "to": "p1789484735540",
+            "port": "out"
+          },
+          {
+            "from": "p1789484735540",
+            "to": "n1789484746883",
+            "port": "out"
+          },
+          {
+            "from": "n1789484746883",
+            "to": "p1789484786243",
+            "port": "out"
+          },
+          {
+            "from": "p1789484786243",
+            "to": "p1789484810997",
+            "port": "out"
+          }
+        ]
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.47500000000000003,
+        "cy": 0.13509727626459145,
+        "size": 0.2799999999999999
+      },
+      "_sel": ""
+    },
+    {
+      "id": "npc_1789478146910",
+      "name": "东贝·雨姐",
+      "gender": "女",
+      "identity": "女巫",
+      "portrait": "AIT20260915201954DQZ7UFWT-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5,
+        "cy": 0.1433981841763943,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478155919",
+      "name": "东贝·雨妹",
+      "gender": "女",
+      "identity": "女巫",
+      "portrait": "AIT20260915202155AOE6XJTP-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5,
+        "cy": 0.16,
+        "size": 0.29999999999999993
+      }
+    },
+    {
+      "id": "npc_1789478163575",
+      "name": "那尔",
+      "gender": "男",
+      "identity": "落魄骑士",
+      "portrait": "AIT20260915202223V5DRB9B6-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5055555555555555,
+        "cy": 0.13717250324254215,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478169233",
+      "name": "后加恒",
+      "gender": "男",
+      "identity": "地精",
+      "portrait": "AIT20260915202235H3JV8Z3F-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.4722222222222222,
+        "cy": 0.21603112840466926,
+        "size": 0.4
+      }
+    },
+    {
+      "id": "npc_1789478180751",
+      "name": "前加亨",
+      "gender": "男",
+      "identity": "地精",
+      "portrait": "AIT20260915202246H2NOMLVB-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5,
+        "cy": 0.16,
+        "size": 0.38
+      }
+    },
+    {
+      "id": "npc_1789478185903",
+      "name": "可比布·莱恩特",
+      "gender": "不详",
+      "identity": "？？？",
+      "portrait": "AIT20260915202256XSP71YC8-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          },
+          {
+            "id": "n1789483646009",
+            "type": "npc",
+            "x": 348.27528399151106,
+            "y": 186.54536507947842,
+            "text": "額······人類，你好。"
+          },
+          {
+            "id": "c1789483744419",
+            "type": "choice",
+            "x": 617.2431513348641,
+            "y": 192.37560582877487,
+            "text": "",
+            "options": [
+              {
+                "id": "o1",
+                "text": "你看起来好奇怪",
+                "flag": ""
+              },
+              {
+                "id": "o2",
+                "text": "你看起来真美！",
+                "flag": ""
+              }
+            ]
+          },
+          {
+            "id": "n1789483776045",
+            "type": "npc",
+            "x": 890.5423494891265,
+            "y": 82.14453206290781,
+            "text": "你看錯了，我只是一個普通的人類，和你們一樣"
+          },
+          {
+            "id": "n1789483778307",
+            "type": "npc",
+            "x": 847.7403078824689,
+            "y": 302.9613912034959,
+            "text": "真的嗎？真讓我沒想到···謝謝？"
+          },
+          {
+            "id": "c1789483981618",
+            "type": "choice",
+            "x": 1174.9490488586432,
+            "y": 77.20657824318468,
+            "text": "",
+            "options": [
+              {
+                "id": "o1",
+                "text": "你是一个外星人。",
+                "flag": ""
+              },
+              {
+                "id": "o2",
+                "text": "嗯···应该是我看错了",
+                "flag": ""
+              }
+            ]
+          },
+          {
+            "id": "c1789483982891",
+            "type": "choice",
+            "x": 1105.6667364203167,
+            "y": 332.73855449071675,
+            "text": "",
+            "options": [
+              {
+                "id": "o1",
+                "text": "我只是随便说说",
+                "flag": ""
+              },
+              {
+                "id": "o2",
+                "text": "是真的。",
+                "flag": ""
+              }
+            ]
+          },
+          {
+            "id": "n1789484094674",
+            "type": "npc",
+            "x": 1394.7614756637722,
+            "y": 225.09354112184803,
+            "text": "额……"
+          },
+          {
+            "id": "n1789484120234",
+            "type": "npc",
+            "x": 1879.2831172048104,
+            "y": 81.9490467935147,
+            "text": "那是我的飞船，但我不小心坠毁了。现在我的确很无助，如果你能帮我做点什么，我可以给你一件宝贝"
+          },
+          {
+            "id": "n1789484120404",
+            "type": "npc",
+            "x": 887.4907668197511,
+            "y": 510.0856552737115,
+            "text": "我保证事后马上给你"
+          },
+          {
+            "id": "c1789484190587",
+            "type": "choice",
+            "x": 40.28464743526456,
+            "y": 560.5571652411568,
+            "text": "",
+            "options": [
+              {
+                "id": "o1",
+                "text": "我可以帮你修",
+                "flag": ""
+              },
+              {
+                "id": "o2",
+                "text": "把你的宝贝给我！！",
+                "flag": ""
+              },
+              {
+                "id": "o1789484572939",
+                "text": "算了，我还有别的事要做",
+                "flag": ""
+              }
+            ]
+          },
+          {
+            "id": "p1789484206819",
+            "type": "player",
+            "x": 637.8398007738792,
+            "y": 481.00406504544003,
+            "text": "然后你会给我这个“宝贝”，对吧？"
+          },
+          {
+            "id": "p1789484209834",
+            "type": "player",
+            "x": 1616.6728795589408,
+            "y": 83.74141842750089,
+            "text": "你身后那个看起来像大盘子的是什么东西？"
+          },
+          {
+            "id": "a1789484409261",
+            "type": "accept",
+            "x": 341.6584401450982,
+            "y": 507.5597323609352,
+            "text": "",
+            "questId": ""
+          },
+          {
+            "id": "n1789484479791",
+            "type": "npc",
+            "x": 1179.006522737862,
+            "y": 502.55315889531335,
+            "text": "我需要四个钉子、三个铁板，请带来给我。"
+          },
+          {
+            "id": "n1789484534571",
+            "type": "npc",
+            "x": 301.7328285471049,
+            "y": 639.7346184724998,
+            "text": "不！你想抢劫我？"
+          },
+          {
+            "id": "c1789484561099",
+            "type": "choice",
+            "x": 566.7273857850892,
+            "y": 751.3937458349576,
+            "text": "",
+            "options": [
+              {
+                "id": "o1",
+                "text": "废话少说！！！",
+                "flag": ""
+              },
+              {
+                "id": "o2",
+                "text": "我只是开玩笑",
+                "flag": ""
+              }
+            ]
+          },
+          {
+            "id": "n1789484588524",
+            "type": "npc",
+            "x": 271.38197160456104,
+            "y": 860.530333409627,
+            "text": "好吧"
+          },
+          {
+            "id": "e1789484950124",
+            "type": "end",
+            "x": 522.9605983810646,
+            "y": 925.4020965261916,
+            "text": ""
+          },
+          {
+            "id": "e1789484966277",
+            "type": "end",
+            "x": 1441.5543945050817,
+            "y": 535.2890883379746,
+            "text": ""
+          },
+          {
+            "id": "b1789486523785",
+            "type": "battle",
+            "x": 838.6713141023581,
+            "y": 799.6228199316632,
+            "text": "",
+            "enemyId": "",
+            "enemyHp": "40"
+          }
+        ],
+        "connections": [
+          {
+            "from": "s",
+            "to": "n1789483646009",
+            "port": "out"
+          },
+          {
+            "from": "n1789483646009",
+            "to": "c1789483744419",
+            "port": "out"
+          },
+          {
+            "from": "c1789483744419",
+            "to": "n1789483778307",
+            "port": "o2"
+          },
+          {
+            "from": "c1789483744419",
+            "to": "n1789483776045",
+            "port": "o1"
+          },
+          {
+            "from": "n1789483776045",
+            "to": "c1789483981618",
+            "port": "out"
+          },
+          {
+            "from": "n1789483778307",
+            "to": "c1789483982891",
+            "port": "out"
+          },
+          {
+            "from": "c1789483982891",
+            "to": "n1789484094674",
+            "port": "o1"
+          },
+          {
+            "from": "c1789483982891",
+            "to": "n1789484094674",
+            "port": "o2"
+          },
+          {
+            "from": "c1789483981618",
+            "to": "n1789484094674",
+            "port": "o2"
+          },
+          {
+            "from": "c1789483981618",
+            "to": "n1789484094674",
+            "port": "o1"
+          },
+          {
+            "from": "n1789484094674",
+            "to": "p1789484209834",
+            "port": "out"
+          },
+          {
+            "from": "p1789484209834",
+            "to": "n1789484120234",
+            "port": "out"
+          },
+          {
+            "from": "n1789484120234",
+            "to": "c1789484190587",
+            "port": "out"
+          },
+          {
+            "from": "c1789484190587",
+            "to": "a1789484409261",
+            "port": "o1"
+          },
+          {
+            "from": "a1789484409261",
+            "to": "p1789484206819",
+            "port": "out"
+          },
+          {
+            "from": "p1789484206819",
+            "to": "n1789484120404",
+            "port": "out"
+          },
+          {
+            "from": "n1789484120404",
+            "to": "n1789484479791",
+            "port": "out"
+          },
+          {
+            "from": "c1789484190587",
+            "to": "n1789484534571",
+            "port": "o2"
+          },
+          {
+            "from": "n1789484534571",
+            "to": "c1789484561099",
+            "port": "out"
+          },
+          {
+            "from": "c1789484190587",
+            "to": "n1789484588524",
+            "port": "o1789484572939"
+          },
+          {
+            "from": "c1789484561099",
+            "to": "c1789484190587",
+            "port": "o2"
+          },
+          {
+            "from": "n1789484588524",
+            "to": "e1789484950124",
+            "port": "out"
+          },
+          {
+            "from": "n1789484479791",
+            "to": "e1789484966277",
+            "port": "out"
+          },
+          {
+            "from": "c1789484561099",
+            "to": "b1789486523785",
+            "port": "o1"
+          }
+        ]
+      },
+      "quests": [
+        {
+          "id": "q1789487070730",
+          "name": "收集飞船零件",
+          "trigger": "dialogue",
+          "goals": [
+            {
+              "type": "item",
+              "consume": true,
+              "itemId": "rusty_nail"
+            },
+            {
+              "type": "item",
+              "consume": true,
+              "itemId": "rusty_nail"
+            },
+            {
+              "type": "item",
+              "consume": true,
+              "itemId": "rusty_nail"
+            },
+            {
+              "type": "item",
+              "consume": true,
+              "itemId": "rusty_nail"
+            }
+          ],
+          "rewards": {
+            "gold": 0,
+            "lockpicks": 0,
+            "expandPoints": 0
+          }
+        }
+      ],
+      "avatarCrop": {
+        "cx": 0.5472222222222223,
+        "cy": 0.15792477302204927,
+        "size": 0.29999999999999993
+      },
+      "_sel": "b1789486523785"
+    },
+    {
+      "id": "npc_1789478191441",
+      "name": "胡昂·穆兰",
+      "gender": "男",
+      "identity": "贪婪收藏家",
+      "portrait": "AIT20260915202304BKNITBHP-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5,
+        "cy": 0.1433981841763943,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478198311",
+      "name": "韩芹",
+      "gender": "女",
+      "identity": "占卜师",
+      "portrait": "AIT20260915202313INGSX44D-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5111111111111111,
+        "cy": 0.1475486381322957,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478205856",
+      "name": "吉多多",
+      "gender": "男",
+      "identity": "农夫",
+      "portrait": "AIT20260915202554JOSL0QAR-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5083333333333333,
+        "cy": 0.13302204928664074,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478211176",
+      "name": "老鸦",
+      "gender": "男",
+      "identity": "熟悉的老登",
+      "portrait": "AIT20260915202610OKAZ5RHA-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5888888888888889,
+        "cy": 0.16,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478215903",
+      "name": "小亮",
+      "gender": "男",
+      "identity": "牧童",
+      "portrait": "AIT20260915202625LSX7Z56O-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5055555555555555,
+        "cy": 0.14962386511024645,
+        "size": 0.2799999999999999
+      }
+    },
+    {
+      "id": "npc_1789478220881",
+      "name": "忘责义",
+      "gender": "男",
+      "identity": "酒鬼",
+      "portrait": "AIT20260915202635ZN9Q9QVT-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5083333333333333,
+        "cy": 0.13302204928664074,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478225968",
+      "name": "乌昂·子睿",
+      "gender": "男",
+      "identity": "樵夫",
+      "portrait": "AIT20260915202648D0NCWBFB-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.49722222222222223,
+        "cy": 0.13094682230869004,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478231543",
+      "name": "行里东",
+      "gender": "男",
+      "identity": "民兵",
+      "portrait": "AIT20260915202703MFTSNQCD-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5,
+        "cy": 0.15169909208819715,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478237551",
+      "name": "加豪",
+      "gender": "男",
+      "identity": "小贩",
+      "portrait": "AIT20260915202712G1SXH3SI-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5222222222222223,
+        "cy": 0.145473411154345,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478242871",
+      "name": "多吉吉",
+      "gender": "男",
+      "identity": "守卫队长",
+      "portrait": "AIT20260915202914OZ5JIPMF-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5111111111111111,
+        "cy": 0.145473411154345,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478248304",
+      "name": "行里西",
+      "gender": "男",
+      "identity": "新兵",
+      "portrait": "AIT20260915202921OBELHHBO-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5083333333333333,
+        "cy": 0.15584954604409856,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478249049",
+      "name": "肖哥",
+      "gender": "男",
+      "identity": "老兵",
+      "portrait": "AIT20260915202929LYYSKKNP-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5194444444444445,
+        "cy": 0.15169909208819715,
+        "size": 0.2399999999999999
+      }
+    },
+    {
+      "id": "npc_1789478261599",
+      "name": "呈砰非",
+      "gender": "男",
+      "identity": "炼金术士",
+      "portrait": "AIT202609152022094WBB1PGW-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5222222222222223,
+        "cy": 0.1433981841763943,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478268279",
+      "name": "央未由",
+      "gender": "女",
+      "identity": "农妇",
+      "portrait": "AIT202609152026026GUMG6FT-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5166666666666667,
+        "cy": 0.15584954604409856,
+        "size": 0.2599999999999999
+      }
+    },
+    {
+      "id": "npc_1789478277359",
+      "name": "蔡徐土申",
+      "gender": "女",
+      "identity": "洗衣老妇",
+      "portrait": "AIT202609152026554EGSDMVP-512x768-pixels,-full-body-standing-portr-1.png",
+      "avatar": "",
+      "moods": [],
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "type": "start",
+            "x": 60,
+            "y": 180
+          }
+        ],
+        "connections": []
+      },
+      "quests": [],
+      "avatarCrop": {
+        "cx": 0.5111111111111111,
+        "cy": 0.145473411154345,
+        "size": 0.2599999999999999
+      }
+    }
+  ]
+}

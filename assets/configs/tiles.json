@@ -1,0 +1,5 @@
+{
+  "tiles": [
+    { "key": "barn", "name": "破败的谷仓", "image": "barn.jpg", "cellW": 8, "cellH": 8 }
+  ]
+}

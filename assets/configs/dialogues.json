@@ -1,0 +1,37 @@
+{
+  "dialogues": [
+    {
+      "id": "farmer_hello",
+      "name": "村口农夫",
+      "speaker": "农夫",
+      "start": "start",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "嘿，外乡人。这村里最近不太平。",
+          "choices": [
+            { "text": "怎么回事？", "next": "trouble" },
+            { "text": "我只是路过。", "next": "bye" }
+          ]
+        },
+        {
+          "id": "trouble",
+          "text": "夜里总有人摸鸡窝。你要是看见形迹可疑的，离远点。",
+          "choices": [
+            { "text": "我懂了。", "next": "end_ok" }
+          ]
+        },
+        {
+          "id": "bye",
+          "text": "那你走好。别惹麻烦。",
+          "choices": []
+        },
+        {
+          "id": "end_ok",
+          "text": "嗯。上帝保佑你。",
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

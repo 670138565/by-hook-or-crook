@@ -1,0 +1,3059 @@
+{
+  "types": [
+    "消耗品",
+    "服装",
+    "武器",
+    "工具",
+    "赃物",
+    "钥匙",
+    "盾牌",
+    "饰品",
+    "任务",
+    "容器",
+    "未分类"
+  ],
+  "items": [
+    {
+      "id": "wooden_box",
+      "type": "容器",
+      "name": "木盒",
+      "desc": "空的小木匣，常被用来装钉子或线团。",
+      "worth": 8,
+      "image": "box.png",
+      "w": 1,
+      "h": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "old_satchel",
+      "type": "容器",
+      "name": "旧背包",
+      "desc": "皮子裂了口，带子打过结，但仍能装东西。",
+      "worth": 35,
+      "image": "backpack.png",
+      "w": 2,
+      "h": 2,
+      "rarity": "epic",
+      "use": "none",
+      "effect": null,
+      "stack": 1
+    },
+    {
+      "id": "rare_box",
+      "type": "容器",
+      "name": "箱中木盒",
+      "desc": "从别人箱子里翻出来的小匣，比普通木盒略工整。",
+      "worth": 18,
+      "image": "box.png",
+      "w": 1,
+      "h": 1,
+      "rarity": "rare",
+      "use": "none",
+      "effect": null,
+      "stack": 1
+    },
+    {
+      "id": "loot_satchel",
+      "type": "容器",
+      "name": "箱中旧包",
+      "desc": "藏在箱底的旧挎包，缝线还算结实。",
+      "worth": 80,
+      "image": "backpack.png",
+      "w": 2,
+      "h": 2,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": null,
+      "stack": 1
+    },
+    {
+      "id": "lockpick",
+      "type": "工具",
+      "name": "开锁器",
+      "desc": "细铁丝一捆。从箱子里拖到左边松开，加到开锁器数量，不占背包格子。",
+      "worth": 12,
+      "image": "kaisuoqi.png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "add_lockpick",
+        "value": 1
+      },
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "rye_bread",
+      "type": "消耗品",
+      "cat": "food",
+      "name": "黑麦面包",
+      "desc": "硬得能敲钉子，但管饱",
+      "worth": 8,
+      "image": "3484d38c-f839-4b04-a946-24e7f720beb5.webp",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 4
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 4,
+        "inCombat": false
+      },
+      "mechanic": "仅战斗外食用",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "rusty_nail",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "生锈铁钉",
+      "desc": "钉过马掌也钉过棺材板",
+      "worth": 3,
+      "image": "8fd42a76-c36f-46a4-81a4-51326a3dd555.png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 3
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "当铺收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "candlestick",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "铜烛台",
+      "desc": "教堂里顺来的，烛泪还没干",
+      "worth": 10,
+      "image": "sss.png",
+      "w": 1,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 10
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "当铺收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "herb_vial",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "草药小瓶",
+      "desc": "苦得皱眉头，但能止血",
+      "worth": 15,
+      "image": "bfc768a3-ede5-4c6f-8446-615cd083a8a7.png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 5
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 5,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "combat_nrg",
+            "energy": 0
+          }
+        ]
+      },
+      "mechanic": "战斗内使用不耗能量",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "silver_cross",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "银十字架",
+      "desc": "银的，赎罪用的那种",
+      "worth": 25,
+      "image": "e9e3844f-282a-4a27-ac5a-1d3548db459e.png",
+      "w": 1,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 25
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "教会收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "noble_letter",
+      "type": "任务",
+      "name": "密封信函",
+      "desc": "火漆未拆的贵族私信。拆开是另一回事，原样更值钱。",
+      "worth": 90,
+      "image": "f7724761-b3e3-4fb9-89b5-cd1ffd167bcf.webp",
+      "w": 2,
+      "h": 1,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": "noble_letter"
+      },
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "heirloom_dagger",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "家传短剑",
+      "desc": "剑鞘刻着三代人的名字，剑锋刻着更多",
+      "worth": 150,
+      "image": "daa02a04-8f94-4c41-8e4b-d610d8861be4.png",
+      "w": 1,
+      "h": 3,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 2,
+        "dmg": 14,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "grow_kill",
+            "per": 1,
+            "cap": 5
+          }
+        ]
+      },
+      "mechanic": "成长：击杀+1(上限+5)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "gold_goblet",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "镀金酒杯",
+      "desc": "镀金的，酒馆老板的镇店之宝",
+      "worth": 40,
+      "image": "71137135-4855-4781-834a-3d73401d0c6a.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 40
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "酒馆收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "relic_key",
+      "type": "钥匙",
+      "name": "圣库钥匙",
+      "desc": "据说世上只有一把，能开某扇不该开的门。",
+      "worth": 0,
+      "image": "0f95d1e3-10a9-4725-816f-eca9750d04e8.png",
+      "w": 1,
+      "h": 1,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "key",
+        "door": "relic_vault"
+      },
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "oak_keg",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "橡木小桶",
+      "desc": "装着陈年麦酒，桶比酒值钱",
+      "worth": 15,
+      "image": "020095d7-c813-458b-8105-f05af695c3b1.png",
+      "w": 2,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 15
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "酒馆收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "billhook",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "钩镰",
+      "desc": "勾住盾沿一拽，下一击就落在肉上",
+      "worth": 55,
+      "image": "image.png",
+      "w": 2,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 3,
+        "dmg": 17,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "hook_guard",
+            "chance": 25
+          }
+        ]
+      },
+      "mechanic": "勾防25%",
+      "out": "",
+      "stack": 1,
+      "shape": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "linen_tunic",
+      "type": "服装",
+      "cat": "armor",
+      "name": "粗布衣",
+      "desc": "洗得发白的粗布，缝着补丁",
+      "worth": 30,
+      "image": "18ff65ac-5076-43ce-b592-8876cbd1686e.png",
+      "w": 2,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 4,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "教学装备",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094773444",
+      "type": "服装",
+      "cat": "armor",
+      "name": "市民外套",
+      "desc": "穿上去像个老实市民，这就够骗过一半人",
+      "worth": 90,
+      "image": "d628cf85-0237-4c9d-b882-b98f1896a818.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 3,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "on_shield_break_turn",
+            "shield": 2
+          }
+        ]
+      },
+      "mechanic": "破盾韧性：本回合盾被击破+2",
+      "out": "口才+1，可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094802576",
+      "type": "服装",
+      "cat": "armor",
+      "name": "贵族衬衫",
+      "desc": "领口的刺绣是纯银线，说话都硬气",
+      "worth": 105,
+      "image": "c68eb6da-9614-4946-94b8-c591627b6dd5.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 3,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "lucky_shield",
+            "chance": 25,
+            "shield": 4
+          }
+        ]
+      },
+      "mechanic": "幸运25%：+4额外护盾",
+      "out": "口才+2，可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094833677",
+      "type": "服装",
+      "cat": "armor",
+      "name": "小丑服",
+      "desc": "彩色的衣服让人笑，笑就忘了拦",
+      "worth": 95,
+      "image": "b6b4550c-c414-4de2-9f70-d037332cc665.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 3,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "dodge",
+            "chance": 25
+          }
+        ]
+      },
+      "mechanic": "闪避25%",
+      "out": "守卫警惕-10%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094852475",
+      "type": "服装",
+      "cat": "armor",
+      "name": "皮甲",
+      "desc": "处理过的皮子，走路不响",
+      "worth": 100,
+      "image": "a921caf4-3ecf-4958-b3b2-b29a2ad9216f.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 4,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "after_hit_next",
+            "shield": 2
+          }
+        ]
+      },
+      "mechanic": "缓冲：受击后下回合+2",
+      "out": "潜行+1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094876427",
+      "type": "服装",
+      "cat": "armor",
+      "name": "锁甲",
+      "desc": "千锤百炼的铁环，重得走不快",
+      "worth": 110,
+      "image": "383c0cc5-1ab8-45f8-b07c-2b5261ec92a4.png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 5,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "overflow_reduce",
+            "value": 2
+          }
+        ]
+      },
+      "mechanic": "抗切割：护盾溢出伤害-2",
+      "out": "潜行-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094917331",
+      "type": "服装",
+      "cat": "armor",
+      "name": "强盗板甲",
+      "desc": "抢来的甲，也带着抢来的气势",
+      "worth": 280,
+      "image": "ae8a9895-e15a-4d3d-9e91-4c74e302243f.png",
+      "w": 2,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 6,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "thorns",
+            "value": 2
+          }
+        ]
+      },
+      "mechanic": "反震：受击反2",
+      "out": "可疑度+1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094955714",
+      "type": "服装",
+      "cat": "armor",
+      "name": "士兵板甲",
+      "desc": "正规军的制式装备，胸甲上有个徽记",
+      "worth": 290,
+      "image": "4eb9fee9-d037-4333-8765-cb4f1132eca1.png",
+      "w": 2,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 6,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "first_hit",
+            "shield": 4
+          }
+        ]
+      },
+      "mechanic": "硬抗：首次受击+4",
+      "out": "可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "item_1788094989544",
+      "type": "服装",
+      "cat": "armor",
+      "name": "夜行服",
+      "desc": "黑得连影子都分不清谁是谁",
+      "worth": 220,
+      "image": "31a0967b-3f8a-45e3-bc39-f4599167ffe8.png",
+      "w": 1,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 2,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "first_turn",
+            "shield": 3
+          }
+        ]
+      },
+      "mechanic": "夜袭：首回合+3",
+      "out": "潜行+2，噪音-15%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "dagger",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "匕首",
+      "desc": "既是凶器也是工具，锁缝里塞得下",
+      "worth": 20,
+      "image": "image_3.png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 6,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "lockpick_skill",
+            "value": 1
+          }
+        ]
+      },
+      "mechanic": "开锁+1",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "flying_knife",
+      "type": "消耗品",
+      "cat": "weapon",
+      "name": "飞刀",
+      "desc": "盗贼贴身的最后手段，掷出时带着点鄙夷",
+      "worth": 25,
+      "image": "image (1).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "consume",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 6,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "consume": true,
+        "effects": [
+          {
+            "type": "empty_dmg",
+            "per": 1,
+            "cap": 3
+          }
+        ]
+      },
+      "mechanic": "每空1格总伤+1(上限+3)，用完消失",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "short_sword",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "短剑",
+      "desc": "短兵相接，伤口的余温还在剑刃上",
+      "worth": 35,
+      "image": "image (2).png",
+      "w": 1,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 2,
+        "dmg": 9,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "chase",
+            "pct": 50,
+            "cap": 14
+          }
+        ]
+      },
+      "mechanic": "追击：本回合已造成伤害+50%(上限14)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "iron_arrow",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "铁箭",
+      "desc": "寻常铁头，胜在笔直",
+      "worth": 40,
+      "image": "image (3).png",
+      "w": 2,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "arrow",
+            "base": 3,
+            "emptyMul": 2
+          }
+        ]
+      },
+      "mechanic": "箭矢：伤害=3+方向空格×2",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "poisoned_dart",
+      "type": "消耗品",
+      "cat": "weapon",
+      "name": "淬毒飞镖",
+      "desc": "见血封喉是夸张，见血发青是真的",
+      "worth": 80,
+      "image": "image (5).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "consume",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 6,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "consume": true,
+        "effects": [
+          {
+            "type": "poison",
+            "stacks": 2
+          }
+        ]
+      },
+      "mechanic": "中毒2层，用完消失",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "oil_bottle",
+      "type": "消耗品",
+      "cat": "weapon",
+      "name": "油瓶",
+      "desc": "一瓶灯油泼过去，整个巡逻队都亮起来",
+      "worth": 75,
+      "image": "image (6).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "consume",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 4,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "consume": true,
+        "effects": [
+          {
+            "type": "ignite_all",
+            "stacks": 2,
+            "shredShield": true
+          }
+        ]
+      },
+      "mechanic": "点燃全体2层+削盾，用完消失",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "poison_arrow",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "毒箭",
+      "desc": "箭头上的黑膏药，闻着像烂沼泽",
+      "worth": 110,
+      "image": "image (7).png",
+      "w": 2,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "arrow_poison",
+            "base": 1,
+            "emptyMul": 1
+          }
+        ]
+      },
+      "mechanic": "箭矢：中毒(1+方向空格)层",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "short_bow",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "短弓",
+      "desc": "拉得够快，敌人还没拔剑就挨了一箭",
+      "worth": 120,
+      "image": "AIT20260917215937NWX1CVQ2.png",
+      "w": 2,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "launcher",
+            "fire": "up",
+            "firstStrike": true
+          }
+        ]
+      },
+      "mechanic": "只射上方贴着的箭（随旋转转）；先手(首回合敌人无法行动)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "spear",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "长矛",
+      "desc": "并列的矛头排成墙，谁也冲不过来",
+      "worth": 140,
+      "image": "image (8).png",
+      "w": 1,
+      "h": 3,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 2,
+        "dmg": 13,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "col_weapons",
+            "per": 2,
+            "cap": 6
+          }
+        ]
+      },
+      "mechanic": "列阵：第1列每武器+2(上限+6)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "scythe",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "镰刀",
+      "desc": "收割过麦子，也收割过别的",
+      "worth": 135,
+      "image": "image (9).png",
+      "w": 2,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 2,
+        "dmg": 12,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "aoe"
+          }
+        ]
+      },
+      "mechanic": "横扫全体",
+      "out": "",
+      "stack": 1,
+      "shape": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "fire_arrow",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "火箭",
+      "desc": "箭头裹着浸油的麻布，亮得像流星",
+      "worth": 260,
+      "image": "image (10).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "arrow_burn",
+            "base": 1,
+            "emptyMul": 1
+          }
+        ]
+      },
+      "mechanic": "箭矢：燃烧(1+方向空格)层",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "meteor_hammer",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "流星锤",
+      "desc": "一锤下去，铁甲也要凹进去一块",
+      "worth": 320,
+      "image": "image (11).png",
+      "w": 2,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 3,
+        "dmg": 20,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "break_shield"
+          },
+          {
+            "type": "stun",
+            "chance": 25
+          },
+          {
+            "type": "vs_shielded",
+            "dmg": 30
+          }
+        ]
+      },
+      "mechanic": "破盾+眩晕25%(对持盾目标伤害30)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "crossbow",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "精制十字弩",
+      "desc": "机括的声音像在数秒",
+      "worth": 280,
+      "image": "image (12).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "launcher",
+            "fire": "right",
+            "charge": 3,
+            "chargeMul": 2
+          }
+        ]
+      },
+      "mechanic": "只射右侧贴着的箭（随旋转转）；充能3层后箭伤翻倍",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "executioner_blade",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "刽子手之刃",
+      "desc": "刀刃宽得能当床板，只用来干一件事",
+      "worth": 600,
+      "image": "image (13).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 3,
+        "dmg": 24,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "below_half",
+            "pct": 30,
+            "cap": 31
+          }
+        ]
+      },
+      "mechanic": "半血以下+30%(上限31)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "war_hammer",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "处刑战锤",
+      "desc": "锤头残留着焦味和药味",
+      "worth": 580,
+      "image": "image (14).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 3,
+        "dmg": 23,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "vs_status",
+            "statuses": [
+              "poison",
+              "burn"
+            ],
+            "pct": 30,
+            "cap": 30
+          }
+        ]
+      },
+      "mechanic": "对中毒/燃烧目标+30%(上限30)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "regent_sword",
+      "type": "武器",
+      "cat": "weapon",
+      "name": "摄政王佩剑",
+      "desc": "从国王腰间夺来的剑，锋刃上还映着他的惊恐",
+      "worth": 0,
+      "image": "image (15).png",
+      "w": 2,
+      "h": 2,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "weapon"
+      },
+      "combat": {
+        "energy": 3,
+        "dmg": 24,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "execute",
+            "hpPct": 30
+          }
+        ]
+      },
+      "mechanic": "目标30%血以下斩杀",
+      "out": "",
+      "unique": true,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "general_plate",
+      "type": "服装",
+      "cat": "armor",
+      "name": "将军板甲",
+      "desc": "将军的甲，护着的是将军的命",
+      "worth": 620,
+      "image": "image (18).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 8,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "on_shield_break",
+            "thorns": 4
+          }
+        ]
+      },
+      "mechanic": "破盾反4",
+      "out": "可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "praetorian_armor",
+      "type": "服装",
+      "cat": "armor",
+      "name": "禁卫重甲",
+      "desc": "禁卫军才穿得起的好铁，穿上像堵墙",
+      "worth": 650,
+      "image": "image (16).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 9,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_shield_held_next",
+            "shield": 2
+          }
+        ]
+      },
+      "mechanic": "未破盾下回合+2",
+      "out": "可疑度-2",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "regent_cuirass",
+      "type": "服装",
+      "cat": "armor",
+      "name": "摄政王胸甲",
+      "desc": "王室的胸甲，穿它的人得配得上王冠",
+      "worth": 0,
+      "image": "image (17).png",
+      "w": 2,
+      "h": 2,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "body"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 12,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "thorns",
+            "value": 3
+          }
+        ]
+      },
+      "mechanic": "受击反3",
+      "out": "口才+3",
+      "unique": true,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "buckler",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "小圆盾",
+      "desc": "绑在胳膊上的小圆盾，挡得住刀挡不住箭雨",
+      "worth": 25,
+      "image": "image (19).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 5,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "once_per_turn"
+          }
+        ]
+      },
+      "mechanic": "每回合1次",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "thorn_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "棘盾",
+      "desc": "盾面钉着铁棘，谁砍谁吃亏",
+      "worth": 85,
+      "image": "image (20).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 4,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "melee_thorns",
+            "value": 2
+          }
+        ]
+      },
+      "mechanic": "受近战攻击反2",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "holy_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "圣徽盾",
+      "desc": "盾上刻着圣徽，挡刀还能回口气",
+      "worth": 240,
+      "image": "image (21).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 8,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "first_hit_heal",
+            "value": 1
+          }
+        ]
+      },
+      "mechanic": "首次受击恢复1生命",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "tower_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "巨盾",
+      "desc": "立起来能当门板，敌人绕着你走",
+      "worth": 300,
+      "image": "image (22).png",
+      "w": 2,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 12,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "intimidate",
+            "atkReduce": 2
+          }
+        ]
+      },
+      "mechanic": "威压：本回合所有敌人攻击-2",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "bastion_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "壁垒巨盾",
+      "desc": "筑起一座移动的城墙",
+      "worth": 580,
+      "image": "image (23).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 15,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_not_hit_next",
+            "shield": 5
+          }
+        ]
+      },
+      "mechanic": "未受击下回合+5",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "paladin_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "圣骑士巨盾",
+      "desc": "圣骑士的盾，受过祝福也受过血",
+      "worth": 620,
+      "image": "image (24).png",
+      "w": 2,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 16,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "after_hit_next",
+            "shield": 4
+          }
+        ]
+      },
+      "mechanic": "受击后下回合+4",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "royal_shield",
+      "type": "盾牌",
+      "cat": "shield",
+      "name": "王室圣盾",
+      "desc": "王盾所指，即王权所及",
+      "worth": 0,
+      "image": "image (25).png",
+      "w": 2,
+      "h": 2,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "shield"
+      },
+      "combat": {
+        "energy": 1,
+        "dmg": 0,
+        "shield": 18,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "shield_cap_bonus",
+            "value": 5
+          }
+        ]
+      },
+      "mechanic": "本回合护盾上限+5(突破20)",
+      "out": "",
+      "unique": true,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "windwalker_badge",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "风行者徽章",
+      "desc": "轻得像没戴，风都追不上你",
+      "worth": 45,
+      "image": "image (45).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "empty_dmg",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "每空1格伤害+1(上限+4)",
+      "out": "噪音-10%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "void_sigil",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "空影符",
+      "desc": "空着的地方藏着看不见的护佑",
+      "worth": 40,
+      "image": "image (46).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "empty_shield",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "每空1格每回合护盾+1(上限+4)",
+      "out": "隐蔽+1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "armory_charm",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "军械护符",
+      "desc": "挂着它就像挂着整个武器库",
+      "worth": 50,
+      "image": "image (47).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "per_weapon_dmg",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "每1件武器伤害+1(上限+4)",
+      "out": "可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "guardian_pendant",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "护卫之坠",
+      "desc": "坠子被甲片围着，护得严实",
+      "worth": 50,
+      "image": "image (48).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "adj8_armor_shield",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "周围8格每防具/盾每回合+1护盾(上限+4)",
+      "out": "可疑度-1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "trophy_chain",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "战利品链",
+      "desc": "把战利品挂在脖子上，招摇但有效",
+      "worth": 110,
+      "image": "image (49).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "per_valuable_dmg",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "每1件贵重品伤害+1(上限+4)",
+      "out": "可疑度+1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "loot_bag",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "赃物袋",
+      "desc": "能装进半个仓库的布袋",
+      "worth": 130,
+      "image": "image (50).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "per_valuable_shield",
+            "per": 1,
+            "cap": 5
+          }
+        ]
+      },
+      "mechanic": "每1件贵重品护盾+1(上限+5)",
+      "out": "赃物空间+2格",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "nightwalker_amulet",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "夜行者护符",
+      "desc": "放在最顺手的地方，夜里也摸得到",
+      "worth": 100,
+      "image": "image (51).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_row1_energy",
+            "value": 1
+          }
+        ]
+      },
+      "mechanic": "位于第1行时每回合+1能量",
+      "out": "隐蔽+2",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "highland_badge",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "高地徽章",
+      "desc": "站在高处，先看清别人",
+      "worth": 100,
+      "image": "image (53).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_col1_dmg",
+            "value": 3
+          }
+        ]
+      },
+      "mechanic": "位于第1列时伤害+3",
+      "out": "守卫视野-5%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "thorn_ring",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "荆棘之环",
+      "desc": "武器围成一圈荆棘，近身者皆伤",
+      "worth": 120,
+      "image": "image (54).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "adj8_weapon_thorns",
+            "per": 1,
+            "cap": 3
+          }
+        ]
+      },
+      "mechanic": "周围8格每武器受击反1(上限+3)",
+      "out": "潜行+1",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "dreamweaver_brooch",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "织梦者胸针",
+      "desc": "戴着它做梦，能梦见敌人的计划",
+      "worth": 300,
+      "image": "image (55).png",
+      "w": 1,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_center_bonus",
+            "shield": 1,
+            "dmg": 1
+          }
+        ]
+      },
+      "mechanic": "位于中央2×2时每回合+1护盾+1伤害",
+      "out": "口才+2",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "crown_fragment",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "王冠碎片",
+      "desc": "王冠的残片，还带着一丝王气",
+      "worth": 250,
+      "image": "image (56).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "regen_shield",
+            "value": 2
+          },
+          {
+            "type": "per_valuable_shield_extra",
+            "per": 1,
+            "cap": 4
+          }
+        ]
+      },
+      "mechanic": "每回合+2护盾+每贵重品额外+1护盾(上限+4)",
+      "out": "销赃+10%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "emerald_brooch",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "翡翠胸针",
+      "desc": "绿得发亮，贵妇们见了都眼热",
+      "worth": 330,
+      "image": "image (57).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_row1_energy",
+            "value": 1
+          },
+          {
+            "type": "if_col1_dmg",
+            "value": 2
+          }
+        ]
+      },
+      "mechanic": "第1行时每回合+1能量、第1列时伤害+2",
+      "out": "口才+2，销赃+15%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "fate_coin",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "命运金币",
+      "desc": "两面都是正面，命运自己掷的",
+      "worth": 650,
+      "image": "image (58).png",
+      "w": 1,
+      "h": 1,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "random_turn",
+            "options": [
+              {
+                "dmg": 3
+              },
+              {
+                "shield": 6
+              },
+              {
+                "energy": 1
+              }
+            ]
+          }
+        ]
+      },
+      "mechanic": "每回合随机：伤害+3/护盾+6/能量+1",
+      "out": "销赃+10%",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "brave_heart",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "勇者之心",
+      "desc": "越是危急，跳得越响",
+      "worth": 600,
+      "image": "image (59).png",
+      "w": 1,
+      "h": 1,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "if_low_hp",
+            "hpPct": 50,
+            "dmg": 4,
+            "shield": 4
+          }
+        ]
+      },
+      "mechanic": "生命低于50%时每回合+4伤害+4护盾",
+      "out": "口才+2",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "royal_seal_ring",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "王室玺戒",
+      "desc": "印下它的人，说的话就是法律",
+      "worth": 0,
+      "image": "image (60).png",
+      "w": 1,
+      "h": 1,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "turn_energy_shield",
+            "energy": 1,
+            "shield": 3
+          }
+        ]
+      },
+      "mechanic": "每回合+1能量+3护盾",
+      "out": "口才+3",
+      "unique": true,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "immortal_amulet",
+      "type": "饰品",
+      "cat": "trinket",
+      "name": "不朽护符",
+      "desc": "戴上它的人，死神会数错数",
+      "worth": 0,
+      "image": "image (62).png",
+      "w": 1,
+      "h": 1,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "equip",
+        "slot": "trinket"
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "once_survive"
+          }
+        ]
+      },
+      "mechanic": "每场战斗首次濒死保留1血",
+      "out": "可疑度-3",
+      "unique": true,
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "antidote",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "解毒剂",
+      "desc": "喝下去，喉咙里的烂沼泽味就散了",
+      "worth": 15,
+      "image": "image (34).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "clear",
+            "status": "poison"
+          }
+        ]
+      },
+      "mechanic": "解除中毒",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "sedative",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "镇静药",
+      "desc": "让人清醒的药，也让人清醒地害怕",
+      "worth": 15,
+      "image": "image (35).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "clear",
+            "status": "stun"
+          }
+        ]
+      },
+      "mechanic": "解除眩晕",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "fire_ointment",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "灭火膏",
+      "desc": "涂上去凉丝丝，焦味慢慢淡了",
+      "worth": 15,
+      "image": "image (36).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "clear",
+            "status": "burn"
+          }
+        ]
+      },
+      "mechanic": "解除燃烧",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "healing_potion",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "治疗药水中",
+      "desc": "正经药剂师的手艺，一股薄荷味",
+      "worth": 45,
+      "image": "image (37).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 12
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 12,
+        "inCombat": true
+      },
+      "mechanic": "",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "energy_potion",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "提神药剂",
+      "desc": "一小口，比睡一觉还顶用",
+      "worth": 50,
+      "image": "image (38).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "gain_energy",
+            "value": 1
+          }
+        ]
+      },
+      "mechanic": "恢复1能量",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "rage_potion",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "狂怒药剂",
+      "desc": "喝下去，眼前只剩下红色",
+      "worth": 60,
+      "image": "image (39).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "rage",
+            "pct": 50
+          }
+        ]
+      },
+      "mechanic": "本回合伤害+50%",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "sage_potion",
+      "type": "消耗品",
+      "cat": "potion",
+      "name": "贤者药剂",
+      "desc": "贤者配的药，据说能起死回生",
+      "worth": 250,
+      "image": "image (40).png",
+      "w": 2,
+      "h": 1,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 30
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 30,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "clear",
+            "status": "all"
+          }
+        ]
+      },
+      "mechanic": "解除全部负面状态",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "roast_chicken",
+      "type": "消耗品",
+      "cat": "food",
+      "name": "烤鸡",
+      "desc": "油亮亮的，闻着就走不动道",
+      "worth": 15,
+      "image": "image (41).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 8
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 8,
+        "inCombat": false
+      },
+      "mechanic": "仅战斗外食用",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "stew",
+      "type": "消耗品",
+      "cat": "food",
+      "name": "炖菜",
+      "desc": "汤浓料足，一碗顶一顿",
+      "worth": 30,
+      "image": "image (42).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 12
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 12,
+        "inCombat": false
+      },
+      "mechanic": "仅战斗外食用",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "feast",
+      "type": "消耗品",
+      "cat": "food",
+      "name": "盛宴大餐",
+      "desc": "烤猪肋排加蜜酒，富人家的吃法",
+      "worth": 40,
+      "image": "image (43).png",
+      "w": 2,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 20
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 20,
+        "inCombat": false
+      },
+      "mechanic": "仅战斗外食用",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "royal_feast",
+      "type": "消耗品",
+      "cat": "food",
+      "name": "皇家盛宴",
+      "desc": "国王餐桌上的东西，吃一口少一口",
+      "worth": 80,
+      "image": "image (44).png",
+      "w": 2,
+      "h": 1,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "consume",
+      "effect": {
+        "type": "heal",
+        "value": 40
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 40,
+        "inCombat": false
+      },
+      "mechanic": "仅战斗外食用",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "fake_key",
+      "type": "工具",
+      "cat": "tool",
+      "name": "假钥匙",
+      "desc": "长得像钥匙，脾气不像",
+      "worth": 20,
+      "image": "image (61).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "fake_key",
+            "chance": 50
+          }
+        ]
+      },
+      "mechanic": "50%直接开锁成功，失败发出巨大噪声",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "torch",
+      "type": "工具",
+      "cat": "tool",
+      "name": "火把",
+      "desc": "火光招来守卫，也照清前路",
+      "worth": 25,
+      "image": "image (26).png",
+      "w": 1,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "light"
+          }
+        ]
+      },
+      "mechanic": "夜间照明，黑暗中行动不受限",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "poison",
+      "type": "工具",
+      "cat": "tool",
+      "name": "毒药",
+      "desc": "无色无味，除了良心都能下",
+      "worth": 70,
+      "image": "image (27).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "consume": true,
+        "effects": [
+          {
+            "type": "next_poison",
+            "stacks": 3
+          }
+        ]
+      },
+      "mechanic": "战斗内下次攻击附加中毒3层；战斗外对NPC食物下毒",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "master_key",
+      "type": "工具",
+      "cat": "tool",
+      "name": "万能钥匙",
+      "desc": "什么锁都认得它",
+      "worth": 280,
+      "image": "image (28).png",
+      "w": 1,
+      "h": 1,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "master_key"
+          }
+        ]
+      },
+      "mechanic": "必定开启一次箱子或门(含任务锁)",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "golden_fake_key",
+      "type": "工具",
+      "cat": "tool",
+      "name": "黄金假钥匙",
+      "desc": "为金箱而生，金锁见了它自己会开",
+      "worth": 320,
+      "image": "image (29).png",
+      "w": 1,
+      "h": 1,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": null,
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true,
+        "effects": [
+          {
+            "type": "gold_chest_key"
+          }
+        ]
+      },
+      "mechanic": "必定开启一次金箱",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "iron_plate",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "铁板",
+      "desc": "上好的熟铁，能打出把好刀",
+      "worth": 20,
+      "image": "image (30).png",
+      "w": 1,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 20
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "铁匠收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "jade_necklace",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "翡翠项链",
+      "desc": "绿得晃眼，商队老板娘的心头好",
+      "worth": 80,
+      "image": "image (31).png",
+      "w": 1,
+      "h": 2,
+      "quality": 3,
+      "rarity": "epic",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 80
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "商人收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "golden_chalice",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "黄金圣餐杯",
+      "desc": "主教的圣餐杯，丢了会闹出人命",
+      "worth": 150,
+      "image": "image (32).png",
+      "w": 1,
+      "h": 2,
+      "quality": 4,
+      "rarity": "legendary",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 150
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "教会收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "royal_crest",
+      "type": "赃物",
+      "cat": "valuable",
+      "name": "王室纹章",
+      "desc": "印着敌国王室的徽记，值钱也烫手",
+      "worth": 200,
+      "image": "image (33).png",
+      "w": 2,
+      "h": 1,
+      "quality": 5,
+      "rarity": "artifact",
+      "use": "none",
+      "effect": {
+        "type": "sell",
+        "value": 200
+      },
+      "combat": {
+        "energy": 0,
+        "dmg": 0,
+        "shield": 0,
+        "heal": 0,
+        "inCombat": true
+      },
+      "mechanic": "销赃物",
+      "out": "反抗军收购",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "lingzhi",
+      "type": "任务",
+      "name": "灵芝",
+      "desc": "不知道是不是真的灵芝，某人可能会喜欢",
+      "worth": 0,
+      "image": "image (63).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "coin_pouch_small",
+      "type": "任务",
+      "name": "一小袋金币",
+      "desc": "零钱叮当响，够买半条黑麦面包",
+      "worth": 0,
+      "image": "image (64).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "coin_sack_large",
+      "type": "任务",
+      "name": "一大包金币",
+      "desc": "沉甸甸一大包，掂在手里就心慌",
+      "worth": 0,
+      "image": "image (69).png",
+      "w": 1,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "old_clothes",
+      "type": "任务",
+      "name": "一堆旧衣服",
+      "desc": "沾满泥的换洗衣物，闻着像赶了远路",
+      "worth": 0,
+      "image": "image (70).png",
+      "w": 1,
+      "h": 2,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "lucky_stone",
+      "type": "任务",
+      "name": "幸运石",
+      "desc": "灰扑扑的小石头，据说揣着能交好运",
+      "worth": 0,
+      "image": "image (65).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "meteor_chip",
+      "type": "任务",
+      "name": "小块陨石",
+      "desc": "夜里摸着发凉的黑石头，不是凡物",
+      "worth": 0,
+      "image": "image (66).png",
+      "w": 1,
+      "h": 1,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "color_feather",
+      "type": "任务",
+      "name": "彩色羽毛",
+      "desc": "不知哪种鸟掉的，颜色亮得扎眼",
+      "worth": 0,
+      "image": "image (67).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "village_beer",
+      "type": "任务",
+      "name": "啤酒",
+      "desc": "村里作坊现酿的，泡沫还没消",
+      "worth": 0,
+      "image": "image (68).png",
+      "w": 1,
+      "h": 1,
+      "quality": 1,
+      "rarity": "common",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    },
+    {
+      "id": "aged_wine",
+      "type": "任务",
+      "name": "葡萄酒",
+      "desc": "软木塞浸着酒渍，一看就是藏了几年",
+      "worth": 0,
+      "image": "image (71).png",
+      "w": 1,
+      "h": 2,
+      "quality": 2,
+      "rarity": "rare",
+      "use": "none",
+      "effect": {
+        "type": "quest",
+        "flag": ""
+      },
+      "mechanic": "交付特定任务NPC",
+      "out": "",
+      "stack": 1,
+      "shape": null
+    }
+  ]
+}
